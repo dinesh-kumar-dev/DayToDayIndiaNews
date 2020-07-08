@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "446857646517",
+    "firebase_url": "https://daytodayindia-14418.firebaseio.com",
+    "project_id": "daytodayindia-14418",
+    "storage_bucket": "daytodayindia-14418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446857646517:android:ea92303f3a0768f599c9fc",
+        "android_client_info": {
+          "package_name": "com.dineshpro.daytodayindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446857646517-fproe892in9e78h5qcvhm64o5s5m0t9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dineshpro.daytodayindia",
+            "certificate_hash": "2178259e7a5662310b83e976823558cd1a1f1f7b"
+          }
+        },
+        {
+          "client_id": "446857646517-8div04k4l9e7che2v78rqvmvu4fipv8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQv3b5WjIpY5_sTfWppz6ZLSPoWi1q1Hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446857646517-8div04k4l9e7che2v78rqvmvu4fipv8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

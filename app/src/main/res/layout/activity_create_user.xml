@@ -1,0 +1,102 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lt1"
+        android:background="@drawable/bacgroundme"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/admin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Registration"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/lt1"
+        android:background="@drawable/whiteradusbackground"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-50dp"
+        android:layout_weight="2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter user id"
+            android:layout_marginTop="50dp"
+            android:id="@+id/create_userid"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Enter Password"
+            android:id="@+id/create_password"
+            android:layout_marginTop="50dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textStyle="bold"
+            android:onClick="userregister"
+            android:textColor="#fff"
+            android:background="@drawable/brownradiusback"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up with"
+            android:textColor="#E7AE5A"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="google"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+                android:drawableLeft="@drawable/googlen"
+                android:background="@drawable/brownradiusback"
+                android:text="GOOGLE"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="facebook"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:drawableLeft="@drawable/facebook"
+                android:background="@drawable/brownradiusback"
+                android:text="FACEBOOK"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

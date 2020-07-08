@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/mylogob"
+                android:layout_width="200dp"
+                android:layout_height="170dp"
+                android:src="@drawable/mylogob" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/whiteradusbackground"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="SIGN IN"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/textvievsignin"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                    android:inputType="textEmailAddress"
+                   android:hint="Email"
+                    android:layout_below="@id/textvievsignin"
+                   android:id="@+id/et_emailaddress"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_password"
+                    android:inputType="textPassword"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/et_emailaddress"
+                    android:layout_marginTop="20dp"
+                    android:hint="Password"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_password"
+                    android:id="@+id/btnLogin"
+                    android:onClick="login"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Log in"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FORGOTTEN PASSWORD"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/forgotten_password"
+                    android:layout_below="@id/btnLogin"
+                    android:textColor="@color/colorPrimary"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
