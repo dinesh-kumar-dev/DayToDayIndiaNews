@@ -195,6 +195,7 @@ spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Toast.makeText(AddNewsActivity.this, error+"", Toast.LENGTH_SHORT).show();
+                        Log.e("Errore","Yaha pr Errore hai");
                     }
                 })
                 {
