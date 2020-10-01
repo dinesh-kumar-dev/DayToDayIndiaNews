@@ -34,6 +34,7 @@ public class AdminLoginActivity extends AppCompatActivity {
         Intent i=new Intent(this,DashBoard.class);
         startActivity(i);
         finish();
-        //Toast.makeText(this, "Hi Iam Going to Logout", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Hi Iam Going to Logout", Toast.LENGTH_SHORT).show();
+        Log.e("Logout","User log Out");
     }
 }
