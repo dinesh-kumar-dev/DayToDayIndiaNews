@@ -62,7 +62,8 @@ public class LoginActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                if(task.isSuccessful())
                                {
-                                   //Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                                   Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                                   Log.e("Error","Hai errore");
                                    SharedPreferences sp=getSharedPreferences("admin",MODE_PRIVATE);
                                    SharedPreferences.Editor Ed=sp.edit();
                                    Ed.putInt("id",1);
